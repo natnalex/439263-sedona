@@ -53,7 +53,7 @@
           <div class="form__contacts">
             <h2 class="form__title">Контактная информация:</h2>
             <p>
-              <label for="tel">Контактный телефон<sup>*</sup>:
+              <label for="tel">Контактный телефон<sup>*</sup>:</label>
               <input class="form__field form__field--tel" id="tel" type="tel" name="tel" placeholder="Введите телефон">
             </p>
             <p>
@@ -64,21 +64,21 @@
           <div class="form__filters">
             <h2 class="form__title">Ваше общее впечатление:</h2>
             <p>
-              <label for="form__radio">
+              <label class="radio">
                   <input class="visually-hidden" type="radio" name="impression" value="positively" checked>
                   <span class="form__radio-indicator"></span>
                   Скорее положительное
               </label>
             </p>
             <p>
-              <label for="form__radio">
+              <label class="radio">
                   <input class="visually-hidden" type="radio" name="impression" value="negative">
                   <span class="form__radio-indicator"></span>
                   Скорее отрицательное
               </label>
             </p>
             <p>
-              <label for="form__radio">
+              <label class="radio">
                   <input class="visually-hidden" type="radio" name="impression" value="difficult">
                   <span class="form__radio-indicator"></span>
                   Затрудняюсь ответить
@@ -121,7 +121,9 @@
             <textarea class="form__text" id="text" name="text" placeholder="Опишите подробно все свои восторги "></textarea>
           </div>
           <button class="form__button button" type="submit">Отправить отзыв</button>
+        </form>
       </section>
+    </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__contacts">
