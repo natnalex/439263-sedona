@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="83" alt="City of Sedona">
+        </a>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <section class="media">
+        <header class="media__header">
+          <h2 class="media__title">Фото и видео</h2>
+          <p class="media__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </header>
+        <ul class="media__list">
+          <li class="media__item">
+            <img class="media__image" src="img/photo-1" width="280" height="280" alt="Неродные просторы">
+            <b class="media__subtitle">Неродные просторы</b>
+            <p class="media__author">Автор фото: Борис</p>
+            <b class="media__like">1350</b>
+          </li>
+          <li class="media__item">
+            <img class="media__image" src="img/photo-2" width="280" height="280" alt="Местная растительность">
+            <b class="media__subtitle">Местная растительность</b>
+            <p class="media__author">Автор фото: Сергей</p>
+            <b class="media__like">143</b>
+          </li>
+          <li class="media__item">
+            <img class="media__image" src="img/photo-3" width="280" height="280" alt="Дорога на север">
+            <b class="media__subtitle">Дорога на север</b>
+            <p class="media__author">Автор фото: Петр</p>
+            <b class="media__like">96</b>
+          </li>
+          <li class="media__item">
+            <img class="media__image" src="img/photo-4" width="280" height="280" alt="Мост дьявола">
+            <b class="media__subtitle">Мост дьявола</b>
+            <p class="media__author">Автор фото: Антон</p>
+            <b class="media__like">254</b>
+          </li>
+        </ul>
+        <div class="media__presentation">
+          <h2 class="media__title">Все еще сомневаетесь?</h2>
+          <p class="media__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <video class="media_video" width="321" height="201" controls="controls" poster="img/video.jpg">
+            <source src="" type="">
+            Видеопризентация
+          </video>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts">
+          <a class="page-footer__visit" href="index.html">#VISITSEDONA</a>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__button social__button--twitter" href="#">Twitter</a>
+              </li>
+              <li class="social__list">
+                <a class="social__button social__button--facebook" href="#">Facebook</a>
+              </li>
+              <li class="social__list">
+                <a class="social__button social__button--youtube" href="#">YouTube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__button button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
