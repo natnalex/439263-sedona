@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -10,16 +11,16 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фото и видео</a>
+            <a class="site-list__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Форма отзыва</a>
+            <a class="site-list__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+            <a class="site-list__link" href="#">HTML Academy</a>
           </li>
         </ul>
         <a class="page-header__logo">
@@ -36,25 +37,25 @@
         </header>
         <ul class="media__list">
           <li class="media__item">
-            <img class="media__image" src="img/photo-1" width="280" height="280" alt="Неродные просторы">
+            <img class="media__image" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
             <b class="media__subtitle">Неродные просторы</b>
             <p class="media__author">Автор фото: Борис</p>
             <b class="media__like">1350</b>
           </li>
           <li class="media__item">
-            <img class="media__image" src="img/photo-2" width="280" height="280" alt="Местная растительность">
+            <img class="media__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
             <b class="media__subtitle">Местная растительность</b>
             <p class="media__author">Автор фото: Сергей</p>
             <b class="media__like">143</b>
           </li>
           <li class="media__item">
-            <img class="media__image" src="img/photo-3" width="280" height="280" alt="Дорога на север">
+            <img class="media__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
             <b class="media__subtitle">Дорога на север</b>
             <p class="media__author">Автор фото: Петр</p>
             <b class="media__like">96</b>
           </li>
           <li class="media__item">
-            <img class="media__image" src="img/photo-4" width="280" height="280" alt="Мост дьявола">
+            <img class="media__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
             <b class="media__subtitle">Мост дьявола</b>
             <p class="media__author">Автор фото: Антон</p>
             <b class="media__like">254</b>
@@ -63,7 +64,7 @@
         <div class="media__presentation">
           <h2 class="media__title">Все еще сомневаетесь?</h2>
           <p class="media__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <video class="media_video" width="321" height="201" controls="controls" poster="img/video.jpg">
+          <video class="media_video" width="321" height="201" controls="controls" poster="img/video-mobile@1x.jpg">
             <source src="" type="">
             Видеопризентация
           </video>
@@ -79,10 +80,10 @@
               <li class="social__item">
                 <a class="social__button social__button--twitter" href="#">Twitter</a>
               </li>
-              <li class="social__list">
+              <li class="social__item">
                 <a class="social__button social__button--facebook" href="#">Facebook</a>
               </li>
-              <li class="social__list">
+              <li class="social__item">
                 <a class="social__button social__button--youtube" href="#">YouTube</a>
               </li>
             </ul>

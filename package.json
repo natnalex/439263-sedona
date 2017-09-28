@@ -5,6 +5,15 @@
   "description": "Личный проект «Седона» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
+<<<<<<< HEAD
+=======
+    "autoprefixer": "7.1.x",
+    "browser-sync": "2.18.x",
+    "gulp": "3.9.x",
+    "gulp-less": "^3.3.2",
+    "gulp-plumber": "1.1.x",
+    "gulp-postcss": "7.0.x",
+>>>>>>> 8435ecd... изменения
     "stylelint": "8.1.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
