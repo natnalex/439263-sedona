@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -10,16 +11,16 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фото и видео</a>
+            <a class="site-list__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Форма отзыва</a>
+            <a class="site-list__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+            <a class="site-list__link" href="#">HTML Academy</a>
           </li>
         </ul>
         <a class="page-header__logo">
@@ -38,26 +39,26 @@
           <div class="form__login">
             <h2 class="form__title">Представьтесь:</h2>
             <p>
-              <label for="name">Имя<sup>*</sup>:</label>
+              <label class="form__label" for="name">Имя<sup>*</sup>:</label>
               <input class="form__field" id="name" type="text" name="first-name" placeholder="Петр">
             </p>
             <p>
-              <label for="surname">Фамилия<sup>*</sup>:</label>
+              <label class="form__label" for="surname">Фамилия<sup>*</sup>:</label>
               <input class="form__field" id="surname" type="text" name="surname" placeholder="Иванов">
             </p>
             <p>
-              <label for="patronymic">Отчeство:</label>
+              <label class="form__label" for="patronymic">Отчeство:</label>
               <input class="form__field" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
             </p>
           </div>
           <div class="form__contacts">
             <h2 class="form__title">Контактная информация:</h2>
             <p>
-              <label for="tel">Контактный телефон<sup>*</sup>:</label>
+              <label class="form__label" for="tel">Контактный телефон<sup>*</sup>:</label>
               <input class="form__field form__field--tel" id="tel" type="tel" name="tel" placeholder="Введите телефон">
             </p>
             <p>
-              <label for="email">Электронная почта<sup>*</sup>:</label>
+              <label class="form__label" for="email">Электронная почта<sup>*</sup>:</label>
               <input class="form__field form-field--email" id="email" type="email" name="email" placeholder="Введите e-mail">
             </p>
           </div>
@@ -117,7 +118,7 @@
             </p>
           </div>
           <div class="form__emotions">
-            <label for="text">Опишите свои эмоции:</label>
+            <label class="form__label" for="text">Опишите свои эмоции:</label>
             <textarea class="form__text" id="text" name="text" placeholder="Опишите подробно все свои восторги "></textarea>
           </div>
           <button class="form__button button" type="submit">Отправить отзыв</button>
@@ -133,10 +134,10 @@
               <li class="social__item">
                 <a class="social__button social__button--twitter" href="#">Twitter</a>
               </li>
-              <li class="social__list">
+              <li class="social__item">
                 <a class="social__button social__button--facebook" href="#">Facebook</a>
               </li>
-              <li class="social__list">
+              <li class="social__item">
                 <a class="social__button social__button--youtube" href="#">YouTube</a>
               </li>
             </ul>
