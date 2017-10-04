@@ -39,7 +39,7 @@
 }
 
 .causes__list {
-  padding: 0 20px;
+  text-align: left;
   background-color: #ffffff;
   list-style: none;
 }
@@ -75,4 +75,40 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .causes__list {
+    display: flex;
+  }
+
+  .causes__wrapper {
+    display: flex;
+  }
+
+.causes__description--right {
+    order: 2;
+}
+
+  .causes__image--left {
+    order: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .causes__list {
+    display: flex;
+  }
+
+  .causes__wrapper {
+    display: flex;
+  }
+
+.causes__description--right {
+    order: 2;
+  }
+
+  .causes__image--left {
+    order: 1;
+  }
 }

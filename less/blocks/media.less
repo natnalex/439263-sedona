@@ -43,3 +43,20 @@
   background-image: url("../img/icon-like.svg");
   background-repeat: no-repeat;
 }
+
+@media (min-width: @tablet-width) {
+}
+
+@media (min-width: @desktop-width) {
+  .media__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .media__item--main {
+    flex-grow: 3;
+  }
+
+  .media__item {
+    flex-grow: 1;
+  }
+}

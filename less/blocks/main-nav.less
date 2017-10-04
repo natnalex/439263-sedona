@@ -1,8 +1,45 @@
 .main-nav {
+  width: 320px;
+  margin: 0 auto;
   padding: 0 20px;
+
   background-color: #ffffff;
 }
 
+.main-nav__toggle {
+  width: 23px;
+  height: 21px;
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-nav__close {
+  width: 23px;
+  height: 22px;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
   background-color: #81b3d2;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
 }

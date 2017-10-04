@@ -1,10 +1,35 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
+
   padding: 0 20px;
   background-color: #ffffff;
 }
 
-.page-header__bg {
+.page-header__background {
+  height: 389px;
+
   background-color: #9ec9df;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__background {
+    height: 518px;
+  }
+
+  .page-header__logo {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__background {
+    height: 518px;
+  }
+
+  .page-header__logo {
+    display: none;
+  }
 }
