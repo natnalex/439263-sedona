@@ -1,3 +1,4 @@
+/* stylelint-disable */
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -812,6 +813,25 @@ img {
   text-transform: uppercase;
   background-image: url("../img/icon-like.svg");
   background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .media__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .media__item--main {
+    -webkit-box-flex: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;
+  }
+  .media__item {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 @media (min-width: 1200px) {
   .media__list {
