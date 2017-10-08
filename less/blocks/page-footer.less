@@ -1,5 +1,7 @@
 .page-footer {
-  padding: 0 20px;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 320px;
   background-color: #ffffff;
 }
 
@@ -12,6 +14,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .page-footer {
+    margin: 0 auto;
+    width: 768px;
+  }
+
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
@@ -19,6 +26,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-footer {
+    widht: 100%;
+  }
+
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
