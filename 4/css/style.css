@@ -519,7 +519,7 @@ img {
   z-index: 2;
   display: block;
   width: 23px;
-  height: 21px;
+  height: 22px;
   background-image: url("../img/icon-menu.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -650,6 +650,7 @@ img {
   margin: 0 auto;
 }
 .page-main__title {
+  margin-top: 45px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -930,7 +931,7 @@ img {
   list-style: none;
 }
 .media__description {
-  padding: 0 20px;
+  padding-left: 20px;
   text-align: left;
 }
 .media__subtitle {
