@@ -1,4 +1,6 @@
 .main-nav {
+  position: relative;
+
   width: 320px;
   margin: 0 auto;
 
@@ -6,19 +8,40 @@
 }
 
 .main-nav__toggle {
+  position: absolute;
+  top: 282px;
+  right: 20px;
+  z-index: 2;
+
+  display: block;
   width: 23px;
   height: 21px;
+
   background-image: url("../img/icon-menu.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: transparent;
+
+  cursor: pointer;
+  border: none;
 }
 
 .main-nav__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+
   width: 23px;
   height: 22px;
+
   background-image: url("../img/icon-cross.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: transparent;
+
+  cursor: pointer;
+  border: none;
 }
 
 .main-nav__list {
@@ -37,6 +60,14 @@
 
   .main-nav__list {
     background-color: #ffffff;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__close {
+    display: close;
   }
 }
 
