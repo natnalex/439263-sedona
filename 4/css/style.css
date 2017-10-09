@@ -457,7 +457,12 @@ img {
           flex-direction: column;
   background-color: #ffffff;
 }
+.page-header__logo {
+  position: absolute;
+  left: 115px;
+}
 .page-header__background {
+  margin-top: 56px;
   height: 389px;
   background-color: #9ec9df;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -465,6 +470,7 @@ img {
   background-position: center;
 }
 .page-header__text-index {
+  margin-top: 90px;
   width: 282px;
   height: 214px;
 }
@@ -501,23 +507,39 @@ img {
   }
 }
 .main-nav {
+  position: relative;
   width: 320px;
   margin: 0 auto;
   background-color: #ffffff;
 }
 .main-nav__toggle {
+  position: absolute;
+  top: 282px;
+  right: 20px;
+  z-index: 2;
+  display: block;
   width: 23px;
   height: 21px;
   background-image: url("../img/icon-menu.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
 }
 .main-nav__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
   width: 23px;
   height: 22px;
   background-image: url("../img/icon-cross.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
 }
 .main-nav__list {
   margin: 0;
@@ -532,6 +554,12 @@ img {
   }
   .main-nav__list {
     background-color: #ffffff;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
+  .main-nav__close {
+    display: close;
   }
 }
 @media (min-width: 1200px) {
@@ -629,7 +657,7 @@ img {
 }
 @media (min-width: 768px) {
   .page-main {
-    width: 760px;
+    width: 768px;
     margin: 0 auto;
   }
 }
@@ -849,15 +877,14 @@ img {
 }
 @media (min-width: 1200px) {
   .page-footer {
-    widht: 100%;
+    width: 1200px;
   }
   .page-footer__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 .social__list {
