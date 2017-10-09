@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
     <base href="https://htmlacademy-adaptive.github.io/439263-sedona/4/">
 </head>
@@ -50,15 +52,15 @@
             <div class="form__login">
               <h2 class="form__title">Представьтесь:</h2>
               <p>
-                <label class="form__lab" for="name">Имя<sup>*</sup>:</label>
+                <label class="form__label" for="name">Имя<sup>*</sup>:</label>
                 <input class="form__field" id="name" type="text" name="first-name" placeholder="Петр">
               </p>
               <p>
-                <label class="form__lab" for="surname">Фамилия<sup>*</sup>:</label>
+                <label class="form__label" for="surname">Фамилия<sup>*</sup>:</label>
                 <input class="form__field" id="surname" type="text" name="surname" placeholder="Иванов">
               </p>
               <p>
-                <label class="form__lab" for="patronymic">Отчeство:</label>
+                <label class="form__label" for="patronymic">Отчeство:</label>
                 <label class="form__label" for="name">Имя<sup>*</sup>:</label>
                 <input class="form__field" id="name" type="text" name="first-name" placeholder="Петр">
               </p>
@@ -73,14 +75,16 @@
             </div>
             <div class="form__contacts">
               <h2 class="form__title">Контактная информация:</h2>
-              <p>
-                <label class="form__lab" for="tel">Контактный телефон<sup>*</sup>:</label>
-                <input class="form__field form__field--tel" id="tel" type="tel" name="tel" placeholder="Введите телефон">
-              </p>
-              <p>
-                <label class="form__label" for="email">Электронная почта<sup>*</sup>:</label>
-                <input class="form__field form-field--email" id="email" type="email" name="email" placeholder="Введите e-mail">
-              </p>
+              <div class="form__contacts-wrapper">
+                <p>
+                  <label class="form__label" for="tel">Контактный телефон<sup>*</sup>:</label>
+                  <input class="form__field form__field--tel" id="tel" type="tel" name="tel" placeholder="Введите телефон">
+                </p>
+                <p>
+                  <label class="form__label" for="email">Электронная почта<sup>*</sup>:</label>
+                  <input class="form__field form-field--email" id="email" type="email" name="email" placeholder="Введите e-mail">
+                </p>
+              </div>
             </div>
             <div class="form__filters">
               <h2 class="form__title">Ваше общее впечатление:</h2>
@@ -109,37 +113,38 @@
           </div>
           <div class="form__attraction">
             <h2 class="form__title">посещенные достопримечательности:</h2>
-            <p>
-              <label class="checkbox">
-                <input class="visually-hidden" type="checkbox" name="attraction" value="Devil's Bridge" checked>
-                <span class="checkbox-indicator"></span>
-                Мост Дьявола
-              </label>
-            </p>
-            <p>
-              <label class="checkbox">
-                <input class="visually-hidden" type="checkbox" name="attraction" value="Slide-park" checked>
-                <span class="checkbox-indicator"></span>
-                Слайд-парк
-              </label>
-            </p>
-            <p>
-              <label class="checkbox">
-                <input class="visually-hidden" type="checkbox" name="attraction" value="Mountain-Bell">
-                <span class="checkbox-indicator"></span>
-                Гора-Колокол
-              </label>
-            </p>
-            <p>
-              <label class="checkbox">
-                <input class="visually-hidden" type="checkbox" name="attraction" value="Red rocks" checked>
-                <span class="checkbox-indicator"></span>
-                Красные скалы
-              </label>
-            </p>
+            <div class="form__wrapper-attraction">
+              <p>
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" name="attraction" value="Devil's Bridge" checked>
+                  <span class="checkbox-indicator"></span>
+                  Мост Дьявола
+                </label>
+              </p>
+              <p>
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" name="attraction" value="Slide-park" checked>
+                  <span class="checkbox-indicator"></span>
+                  Слайд-парк
+                </label>
+              </p>
+              <p>
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" name="attraction" value="Mountain-Bell">
+                  <span class="checkbox-indicator"></span>
+                  Гора-Колокол
+                </label>
+              </p>
+              <p>
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" name="attraction" value="Red rocks" checked>
+                  <span class="checkbox-indicator"></span>
+                  Красные скалы
+                </label>
+              </p>
+            </div>
           </div>
           <div class="form__emotions">
-            <label class="form__lab" for="text">Опишите свои эмоции:</label>
             <label class="form__label" for="text">Опишите свои эмоции:</label>
             <textarea class="form__text" id="text" name="text" placeholder="Опишите подробно все свои восторги "></textarea>
           </div>
@@ -149,7 +154,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__visit" href="index.html">#VISITSEDONA</a>
+        <a class="page-footer__visit" href="index.html">#Visitsedona</a>
         <div class="page-footer__contacts">
           <div class="page-footer__social social">
             <ul class="social__list">
@@ -167,7 +172,7 @@
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <a class="copyright__button button" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy<</span></a>
+          <a class="copyright__button" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy<</span></a>
         </div>
       </div>
     </footer>
@@ -175,13 +180,17 @@
 </html>
 
 <section class="form-error">
-  <h2 class="form-error__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
-  <p class="form-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-  <button class="form-error__button button" type="button">Ok</button>
+  <div class="form-error__wrapper">
+    <h2 class="form-error__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+    <p class="form-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="form-error__button button" type="button">Ok</button>
+  </div>
 </section>
 
 <section class="emotions-sent">
-  <h2 class="emotions-sent__title">Ваш отзыв отправлен!</h2>
-  <p class="emotions-sent__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
-  <button class="emotions-sent__button button">Закрыть окно</button>
+  <div class="emotions-sent__wrapper">
+    <h2 class="emotions-sent__title">Ваш отзыв отправлен!</h2>
+    <p class="emotions-sent__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+    <button class="emotions-sent__button button">Закрыть окно</button>
+  </div>
 </section>
